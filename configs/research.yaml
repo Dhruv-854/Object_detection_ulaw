@@ -1,0 +1,34 @@
+project:
+  title: Object Detection
+  candidate_number: 420663
+  seed: 42
+
+classes:
+  0: bottle
+  1: chair
+  2: cup
+  3: laptop
+  4: cell phone
+
+dataset_targets:
+  images: 1000
+  sessions: 20
+  negative_images: 100
+  split:
+    train: 0.70
+    val: 0.15
+    test: 0.15
+
+training:
+  image_size: 640
+  epochs: 100
+  batch_size: 16
+  patience: 20
+  seed: 42
+
+benchmark:
+  image_sizes: [480, 640]
+  warmup_frames: 30
+  measured_frames: 300
+  target_fps: 30
+

@@ -1,0 +1,40 @@
+[build-system]
+requires = ["setuptools>=70", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "msc-object-detection"
+version = "0.1.0"
+description = "Reproducible YOLOv5 and YOLO26 object-detection research application"
+readme = "README.md"
+requires-python = ">=3.11,<3.13"
+license = {text = "Academic use; third-party model licences apply"}
+authors = [{name = "Candidate 420663"}]
+dependencies = [
+  "numpy==2.2.6",
+  "opencv-python==4.12.0.88",
+  "PyYAML==6.0.2",
+  "ultralytics==8.4.109",
+]
+
+[project.optional-dependencies]
+dev = [
+  "pytest==8.4.1",
+  "pytest-cov==6.2.1",
+  "ruff==0.12.7",
+]
+
+[project.scripts]
+object-detection = "object_detection.cli:main"
+
+[tool.setuptools.packages.find]
+include = ["object_detection*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-ra"
+
+[tool.ruff]
+line-length = 100
+target-version = "py311"
+

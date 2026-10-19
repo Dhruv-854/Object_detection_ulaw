@@ -1,0 +1,23 @@
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.coverage
+.venv/
+dist/
+build/
+
+# Large or generated research artifacts
+models/*.pt
+models/*.onnx
+models/model-lock.json
+data/raw/
+data/processed/
+runs/
+outputs/
+artifacts/results/
+
+# Local machine and editor files
+.DS_Store
+.idea/
+.vscode/

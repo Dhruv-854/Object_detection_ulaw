@@ -1,0 +1,3 @@
+image_path,session_id,lighting,distance,occlusion,motion_blur,negative,notes
+images/example.jpg,session-001,normal,near,none,false,false,replace this example row
+

@@ -1,0 +1,13 @@
+models:
+  yolov5s:
+    family: yolov5
+    checkpoint: models/yolov5s-v7.0.pt
+    source_repository: https://github.com/ultralytics/yolov5
+    source_tag: v7.0
+    postprocessing: non-maximum suppression
+  yolo26n:
+    family: ultralytics
+    checkpoint: models/yolo26n.pt
+    documentation: https://docs.ultralytics.com/models/yolo26/
+    postprocessing: end-to-end model output
+

@@ -1,0 +1,11 @@
+# Direct dependency lock for the reproducible Python 3.11 environment.
+# PyTorch is installed transitively by Ultralytics and is platform-specific;
+# record the resolved version in each experiment's environment.json.
+numpy==2.2.6
+opencv-python==4.12.0.88
+PyYAML==6.0.2
+ultralytics==8.4.109
+pytest==8.4.1
+pytest-cov==6.2.1
+ruff==0.12.7
+
